@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="tn.edu.esprit.infini.theWolves.tvForEx">
+	<jta-data-source>java:/tvForExDS</jta-data-source>
+	<class>tn.edu.esprit.infini.theWolves.tvForEx.domain.Bank</class>
+	<class>tn.edu.esprit.infini.theWolves.tvForEx.domain.Currency</class>
+	<class>tn.edu.esprit.infini.theWolves.tvForEx.domain.Transaction</class>
+	<class>tn.edu.esprit.infini.theWolves.tvForEx.domain.TransactionPk</class>
+	<class>tn.edu.esprit.infini.theWolves.tvForEx.domain.Customer</class>
+	<class>tn.edu.esprit.infini.theWolves.tvForEx.domain.CentralBank</class>
+	<class>tn.edu.esprit.infini.theWolves.tvForEx.domain.Corporate</class>
+	<class>tn.edu.esprit.infini.theWolves.tvForEx.domain.Position</class>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+		</properties>
+	
+	</persistence-unit>
+</persistence>
